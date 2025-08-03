@@ -1,0 +1,27 @@
+// Класс, представляющий язык программирования и его рейтинг
+public class Language {
+    private String name;        // Название языка
+    private Double ranking;     // Рейтинг языка в процентах
+
+    // Конструктор класса Language
+    public Language(String name, Double ranking) {
+        this.name = name;
+        this.ranking = ranking;
+    }
+
+    // Геттер для названия языка
+    public String getName() {
+        return name;
+    }
+
+    // Геттер для рейтинга языка
+    public Double getRanking() {
+        return ranking;
+    }
+
+    // Переопределенный метод toString для красивого вывода информации о языке
+    @Override
+    public String toString() {
+        return "Язык программирования - " + name + ", рейтинг  - " + ranking + "% опрошенных.";
+    }
+}
